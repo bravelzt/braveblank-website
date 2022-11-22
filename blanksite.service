@@ -1,0 +1,17 @@
+[Unit]
+Description=MyUnit
+After=syslog.target
+After=network.target
+After=nginx.service
+
+[Service]
+Type=simple
+WorkingDirectory=/home/brave/dev/braveblank-website/
+
+User=brave
+Group=brave
+
+ExecStart=npx next start -p 8080
+
+[Install]
+WantedBy=multi-user.target 
