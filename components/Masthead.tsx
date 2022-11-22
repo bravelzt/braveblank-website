@@ -31,7 +31,11 @@ const Masthead: React.FC = () => {
         <h2 className={styles.maincont}>
           <span>Разработка, </span> <span>сделанная правильно.</span>
         </h2>
-        <Link href="https://bravestd.t.me" className={styles.button}>
+        <Link
+          target="_blank"
+          href="https://bravestd.t.me"
+          className={styles.button}
+        >
           Связаться
         </Link>
       </div>
