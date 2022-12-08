@@ -1,6 +1,6 @@
 {
   "name": "braveblank-website",
-  "version": "0.1.0",
+  "version": "22.12.08",
   "private": true,
   "scripts": {
     "dev": "next dev",
