@@ -11,7 +11,7 @@ WorkingDirectory=/home/brave/dev/braveblank-website/
 User=brave
 Group=brave
 
-ExecStart=npx next start -p 8080
+ExecStart=pnpm start -p 8080
 
 [Install]
 WantedBy=multi-user.target 
