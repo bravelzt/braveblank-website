@@ -25,3 +25,11 @@ a {
     background: black;
   }
 }
+
+.direct-telegram {
+  padding: 1em 0;
+  font-size: 12px;
+  background-color: black;
+  text-align: center;
+  display: block;
+}

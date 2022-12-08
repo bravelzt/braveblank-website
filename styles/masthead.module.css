@@ -1,44 +1,88 @@
 .masthead {
-  /* "min-h-screen flex flex-col items-center justify-center sticky top-0 -z-10" */
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
   align-items: center;
   top: 0;
   z-index: -10;
 }
 
-.video {
-  /* "absolute w-full h-full object-cover" */
+.image {
   position: absolute;
   width: 100%;
   height: 100%;
   object-fit: cover;
+  opacity: 0.2;
+  filter: blur(2px);
+  animation: 5s ease-in background-appear, 1s ease background-trans,
+    3s linear background-main infinite;
+  animation-delay: 0s, 5s, 6s;
+  z-index: -10;
+}
+
+@keyframes background-trans {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 0.2;
+  }
+}
+
+@keyframes background-main {
+  0% {
+    opacity: 0.2;
+  }
+
+  30% {
+    opacity: 0.1;
+  }
+
+  100% {
+    opacity: 0.2;
+  }
+}
+
+@keyframes background-appear {
+  20% {
+    opacity: 0;
+  }
+
+  30% {
+    opacity: 0.25;
+  }
+
+  65% {
+    opacity: 0.1;
+  }
+
+  100% {
+    opacity: 0;
+  }
 }
 
 .logo {
-  /* flex-grow-0 pt-10 transition-opacity duration-1000 */
   flex-grow: 0;
-  padding-top: 10;
+  padding-top: 0;
   transition: opacity 1s ease;
   opacity: 100;
   z-index: 1;
-  margin-top: 14em;
+  margin-top: 8em;
 }
 
 .inner {
-  /* "p-12 font-bold z-10 text-white drop-shadow-[0_5px_3px_rgba(0,0,0,0.4)] text-center flex-1 flex items-center justify-center flex-col" */
   padding: 12px;
   font-weight: bold;
   z-index: 10;
   color: white;
   text-align: center;
-  flex: 1 auto;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  flex-direction: column;
+  position: absolute;
+  transform: translateY(calc(50vh - 50%));
 }
 
 .title {
@@ -64,4 +108,28 @@
 
 .button:active {
   background-color: #cdcdcd;
+}
+
+@media screen and (max-width: 600px) {
+  .logo {
+    margin-top: 5em;
+  }
+
+  .inner {
+    width: 100%;
+    background-color: rgba(255 255 255 / 3%);
+    padding-bottom: 2em;
+  }
+
+  .button {
+    margin-top: 0.5em;
+  }
+
+  .title {
+    font-size: 2em;
+  }
+
+  .maincont {
+    font-size: 1.2em;
+  }
 }

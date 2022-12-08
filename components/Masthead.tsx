@@ -13,10 +13,13 @@ const Masthead: React.FC = () => {
 
   return (
     <div className={styles.masthead}>
-      <video autoPlay loop muted playsInline className={styles.video}>
-        <source src="/assets/masthead-bg.mp4" type="video/mp4" />
-        <source src="/assets/masthead-bg.webm" type="video/webm; codecs=vp9" />
-      </video>
+      <Image
+        src="/assets/masthead-bg.jpg"
+        alt="image background"
+        width={1920}
+        height={1080}
+        className={styles.image}
+      />
       <div className={styles.logo} style={{ opacity: imageLoaded ? 100 : 0 }}>
         <Image
           src="/assets/logo.svg"
