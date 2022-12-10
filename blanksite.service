@@ -12,6 +12,7 @@ User=brave
 Group=brave
 
 ExecStart=pnpm start -p 8080
+Restart=always
 
 [Install]
 WantedBy=multi-user.target 
