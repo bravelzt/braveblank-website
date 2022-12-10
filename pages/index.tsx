@@ -24,7 +24,7 @@ export default function Home() {
         <meta name="twitter:data1" content="1 минута" />
         <meta
           name="lava"
-          content="M9pvQt8yRh2GAmZq0BeaYP6ucbxz1KkLVITFXlHEwUgn4OrW"
+          content="WSIe4CgJoUEX8bBOLtQGr6H2xTd3V1qlpNauczfmDihM7ZF9"
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
