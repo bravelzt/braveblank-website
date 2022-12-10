@@ -22,6 +22,10 @@ export default function Home() {
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:label1" content="Примерное время для чтения" />
         <meta name="twitter:data1" content="1 минута" />
+        <meta
+          name="lava"
+          content="M9pvQt8yRh2GAmZq0BeaYP6ucbxz1KkLVITFXlHEwUgn4OrW"
+        />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Masthead />
